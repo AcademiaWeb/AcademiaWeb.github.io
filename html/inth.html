@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Introdução ao HTML</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, tag, elemento, atributo">
+    <meta name="description" content="introducao ao HTML">
+    <meta name="robots" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" type="text/css" href="inth.css">
+  </head>
+  <body>
+    <div class="conteiner">
+      <header class="header">
+        <h1 class="titulo">Academia Web</h1>
+        <nav class="menu">
+          <ul>
+            <li class="lista"><a href="/index.html" target="_blank" class="link">HOME</a></li>
+             <li class="lista"><a href="inth.html" target="_blank" class="link">HTML</a></li>
+            <li class="lista"><a href="/css/intcss.html" target="_blank" class="link">CSS</a></li>
+            <li class="lista"><a href="/javascript/intjs.html" target="_blank" class="link">Javascript</a></li>
+            <li class="lista"><a href="/sobre/sobre.html" target="_blank" class="link">Sobre</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <h1 class="subtitulo">Introdução ao HTML5</h1>
+        <p class="paragrafo">De forma geral o HTML (Hyper Text Markup Language), é uma Linguagem de Marcação de Hipertexto, usada na construção de páginas Web.</p>
+        <p class="paragrafo">O HTML foi desenvolvido por Tim Berners-Lee, em 1991 no CERN (European Council for Nuclear Research) na suíça.</p>
+        <p class="paragrafo">A estrutura básica do HTML é formada por tags, elementos e atributos.</p><br>
+         <p class="paragrafo">As Tags são um conjunto de caracteres que formam um elemento, indicando o seu começo e fim.</p>
+        <p class="paragrafo">Existem dois tipos de tags, sendo as:</p><br>
+        <p class="paragrafo">Que precisam de fechamento:</p>
+        <div class="contexemplo">
+          <p class="ex"><span class="fab fa-html5"></span> HTML</p>
+          <div class="exemplo">
+            &#60;body&#62;<br>
+            &nbsp; &#60;p&#62;<span class="corum">Conteúdo</span>&#60;/p&#62;<br>
+            &#60;/body&#62;
+          </div>
+        </div><br>
+        <p class="paragrafo">É as que não presisam ser fechadas:</p>
+        <div class="contexemplo">
+          <p class="ex"><span class="fab fa-html5"></span> HTML</p>
+          <div class="exemplo">
+            &#60;body&#62;<br>
+            &nbsp; <span class="corum">Conteúdo</span>&#60;br&#62;<br>
+            &#60;/body&#62;
+          </div>
+        </div><br>
+        <p class="paragrafo">Os Elementos são compostos pelas tags e o conteúdo contido dentro da mesma, conteúdo esse que pode ser imagem, texto, elemento vazio.</p><br>
+        <div class="contexemplo">
+          <p class="ex"><span class="fab fa-html5"></span> HTML</p>
+          <div class="exemplo">
+            &#60;body&#62;<br>
+            &nbsp; <span class="corum">Conteúdo</span>&#60;br&#62;<br>
+            &#60;/body&#62;
+          </div>
+        </div><br>
+        <p class="paragrafo">O exemplo acima é de um elemento vazio, pois é uma quebra de linha, ou seja o elemento da tag e um espaço.</p><br>
+        <p class="paragrafo">Os atributos são informações complementares, que deve ser atribuídos a uma tag para que a mesma se comporte de uma determinada forma. O exemplo a seguir atribui a tag <span class="elemento">&#60;html&#62;</span> a função de informa a linguagem predominante no texto.</p><br>
+         <div class="contexemplo">
+            <p class="ex"><span class="fab fa-html5"> HTML</span></p>
+            <div class="exemplo">
+              &#60;html lang="<span class="atributo">pt-br</span>"&#62;<br>
+              &nbsp; &#60;title&#62;<span class="corum">Teste</span>&#60;/title&#62;<br>
+              &#60;/html&#62;
+            </div>
+         </div><br>
+         <p class="paragrafo">No exemplo a seguir está a estrutura básica do código html:</p><br>
+        <div class="excompleto">
+          <p class="ex"><span class="fab fa-html5"></span> HTML</p>
+          <div class="exemplocompleto">
+            &#60;!DOCTYPE html&#62;<br>
+            &#60;html lang = "<span class="atributo">pt-br</span>"&#62;<br>
+             &#60;head&#62;<br>
+            &nbsp; &#60;title&#62; <span class="corum">Título da página Web</span>&#60;/title&#62;<br>
+            &nbsp; &#60;meta charset = "<span class="atributo">UTF-8</span>"&#62;<br>
+            &#60;/head&#62;<br>
+            &#60;body&#62;<br>
+            &nbsp; <span class="corum">Conteúdo da página web</span><br>
+            &#60;/body&#62;<br>
+            &#60;/html&#62;<br>
+          </div>
+          </div><br>
+       <h3 class="subtitulo">Definição:</h3>
+       <p class="paragrafo"><span class="elemento">&#60;!DOCTYPE html&#62;</span> : Informa ao browser (navegador) qual é o tipo do documento, é em que versão está. No caso ao colocá somente HTML no final o navegador entende que está na versão 5. (Não é uma tag e uma instrução para o navegador.)</p><br>
+        <p class="paragrafo"><span class="elemento">&#60;html lang = "<span class="atributo">pt-br</span>"&#62; &#60;/html&#62; </span>: Indica o início e o fim do código, é informa através do atributo lang qual é a linguagem predominante. No caso é o português Brasil.</p><br>
+         <p class="paragrafo"><span class="elemento">&#60;head&#62; &#60;/head&#62;</span> : Nesta área fica o cabeçalho do código, ou seja é nesta área onde será definido qual conjunto de símbolos o texto usa, título, palavras-chave, etc.</p><br>
+       <p class="paragrafo"><span class="elemento">&#60;title&#62; &#60;/title&#62;</span> : Tag para definir o título da página Web, o mesmo é exibido na aba da página.</p><br>
+        <p class="paragrafo"><span class="elemento">&#60;meta charset = "<span class="atributo">UTF-8</span>"&#62;</span> : Está tag serve para especificar qual conjunto de acentos / símbolos a página web está usando, no caso o "UTF-8" equivale ao conjunto de acentos / símbolos usado no português Brasil.</p><br>
+       <p class="paragrafo"><span class="elemento">&#60;body&#62; &#60;/body&#62;</span> : É nesta área onde fica o conteúdo da página Web.</p>
+       <p class="recado">Siga o nosso tutorial na ordem para que você compreenda melhor o conteúdo:)</p>
+       <div class="contbotao">
+         <a href="/index.html" class="botao"><span class="fas fa-angle-double-left"></span>Home</a>
+       </div>
+      </main>
+      <footer class="footer">
+        <div class="centro">
+          <div class="contfooter">
+            <a href="https://instagram.com/academia_web.github?igshid=9ke1h6y11nf5" class="rede"><span class="fab fa-instagram"></span></a>
+          </div>
+          <div class="contfooter">
+            <a href="https://github.com/AcademiaWeb" class="rede"><span class="fab fa-github"></span></a>
+          </div>
+        </div>
+        <p class="mensagem"><span class="fa fa-copyright"></span>Alguns direitos reservados</p>
+    </footer>
+  </div>
+  </body>
+</html>
