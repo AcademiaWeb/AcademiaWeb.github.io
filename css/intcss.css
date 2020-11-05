@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Arial, Helvetica, sans-serif;
+}
+
+.conteiner{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15em 4fr 10em;
+  grid-template-areas: "header"
+                        "main"
+                        "footer";
+}
+
+.header{
+  grid-area: header;
+  position: fixed;
+  width: 100%;
+}
+
+.titulo{
+  color: #ffffff;
+  background: rgb(0, 0, 128);
+  max-width: 100%;
+  border-bottom: 0.5em solid rgb(0, 142, 204);
+  text-align: center;
+  padding: 0.8em;
+}
+
+.menu{
+  background: rgb(0, 128, 255);
+  max-width: 100%;
+  height: 3.2em;
+  margin-bottom: 1.2em;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.lista{
+  list-style: none;
+  display: inline;
+  margin: 0.5em;
+  padding: 0.2em;
+}
+
+.link{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.centro{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.main{
+  grid-area: main;
+}
+
+.subtitulo{
+  margin: 0.5em;
+}
+
+.paragrafo{
+  margin-left: 0.5em;
+  margin-bottom: 0.2em;
+  text-indent: 0.3em;
+}
+
+.contlista{
+  margin: 0.5em;
+}
+
+.atributo{
+  color: rgb(1, 121, 111);
+}
+
+.elemento{
+  color: rgb(0, 0, 128);
+}
+
+.valor{
+  color: orange;
+}
+
+.corum{
+  color: #000000;
+}
+
+.contexemplo{
+  margin: 0.3em;
+  padding: 0.3em;
+  width: 24em;
+}
+
+.ex{
+  color: #ffffff;
+  background: rgba(0, 0, 128);
+  padding: 0.8em;
+  border-radius: 0.3em;
+}
+
+.exemplo{
+  color: rgb(0 0 128);
+  border: 0.2em solid rgb(0, 0, 128);
+  padding: 0.8em;
+  border-radius: 0.3em;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  white-space: nowrap;
+}
+
+.recado{
+  margin-top: 5em;
+  margin-left: 0.5em;
+}
+
+.contbotao{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.botao{
+  color: #ffffff;
+  background: rgb(0, 0, 128);
+  text-decoration: none;
+  text-align: center;
+  width: 8em;
+  margin-top: 1.5em;
+  padding: 0.5em;
+  border-radius: 0.3em;
+}
+
+.contfooter{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  margin: 0.5em;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+}
+
+.rede{
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.mensagem{
+  color: #ffffff;
+  padding: 0.5em;
+}
+
+.footer{
+  grid-area: footer;
+  display: grid;
+  background: rgb(0, 128, 255);
+  width: 100%;
+  height: 100%;
+  margin-top: 5em;
+  border-radius: 0.3em;
+  align-content: flex-end;
+  justify-content: center;
+}
