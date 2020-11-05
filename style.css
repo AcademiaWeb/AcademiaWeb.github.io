@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Arial, Helvetica, sans-serif;
+}
+
+.conteiner{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr 10em;
+  grid-template-areas: "header"
+                        "main"
+                        "footer";
+}
+
+.header{
+  grid-area: header;
+  position: fixed;
+  width: 100%;
+}
+
+.titulo{
+  color: white;
+  background: rgb(0 0 128);
+  max-width: 100%;
+  border-bottom: 0.5em solid rgb(0 142 204);
+  text-align: center;
+  padding: 0.8em;
+}
+
+.menu{
+  background: rgb(0 128 255);
+  max-width: 100%;
+  height: 3.2em;
+  margin-bottom: 1.2em;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.lista{
+  list-style: none;
+  display: inline;
+  margin: 0.5em;
+  padding: 0.2em;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+.main{
+  grid-area: main;
+}
+
+.subtitulo{
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.centro{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.imagens{
+  width: 20em;
+  height: 15em;
+  border-top: 0.8em;
+  border-radius: 0.3em;
+}
+
+.tutoriais{
+  background: rgb(15 82 186);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 20em;
+  height: 4em;
+  border-radius: 0.3em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+.contfooter{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  margin: 0.5em;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+}
+
+.rede{
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.mensagem{
+  color: white;
+  padding: 0.5em;
+}
+
+.footer{
+  grid-area: footer;
+  display: grid;
+  background: rgb(0 128 255);
+  width: 100%;
+  height: 100%;
+  margin-top: 5em;
+  border-radius: 0.3em;
+  align-content: flex-end;
+  justify-content: center;
+}
