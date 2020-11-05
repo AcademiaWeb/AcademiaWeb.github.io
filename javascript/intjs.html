@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Introdução ao Javascript</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="javascript, linguagem de programação">
+    <meta name="description" content="introducao ao javascript">
+    <meta name="robots" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="intjs.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  </head>
+  <body>
+    <div class="conteiner">
+      <header class="header">
+        <h1 class="titulo">Academia Web</h1>
+        <nav class="menu">
+          <ul>
+            <li class="lista"><a href="/index.html" target="_blank" class="link">HOME</a></li>
+            <li class="lista"><a href="/html/inth.html" target="_blank" class="link">HTML</a></li>
+            <li class="lista"><a href="/css/intcss.html" target="_blank" class="link">CSS</a></li>
+            <li class="lista"><a href="intjs.html" class="link">JavaScript</a></li>
+            <li class="lista"><a href="/sobre/sobre.html" target="_blank" class="link">Sobre</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <h2 class="subtitulo">Introdução ao Javascript</h2>
+        <p class="paragrafo">O Javascript é uma linguagem de programação interpretada, de tipagem fraca e dinâmica, foi criada em 1995 por Brendan Eich.</p></br>
+        <p class="paragrafo">Mas o que é uma linguagem interpretada?, de tipagem fraca?, é dinâmica?</p></br>
+        <p class="paragrafo">De forma geral, uma linguagem de programação interpretada é aquela que precisa de um interpretador para que os programas sejam executados, para que em seguida seja executado pelo sistema operacional ou processador.</p></br>
+        <p class="paragrafo">Uma linguagem de tipagem fraca realiza conversões automaticamente entre os tipos de dados, ou seja, o programador não precisa se preocupar em fazer as conversões de tipo manualmente, a própria linguagem faz isso. Legal né?:)</p></br>
+        <p class="paragrafo">Já uma linguagem de programação dinâmica e quando determinadas operações podem ser realizadas em tempo de execução, ou seja, é possível mudar o tipo de uma variável, adicionar novos métodos ou propriedades a um objeto enquanto o programa está sendo executado.</p></br>
+        <p class="paragrafo">Agora que você já entendeu as principais características do javascript, é hora de aprender como adicionar ele no seu código HTML.</p>
+        <p class="paragrafo">O código javascript pode ser colocado nas áreas <span class="elemento">&#60;head&#62; &#60;/head&#62;</span> ou <span class="elemento">&#60;body&#62; &#60;/body&#62;</span>, ou em ambas, através da tag <span class="elemento">&#60;script&#62; &#60;/script&#62;</span>.</p>
+        <p class="paragrafo">No exemplo a seguir vamos colocar o código javascript na área <span class="elemento">&#60;head&#62; &#60;/head&#62;</span>, e criar um script que irá mostrar uma mensagem com a frase "Hello, World" na tela, usando o método <span class="propriedade">alert()</span>.</p>
+        <div class="exemplocompleto">
+          <div>
+            <p class="ex">EXEMPLO</p>
+          </div>
+          <div class="exemplo">
+            &#60;!DOCTYPE html&#62;</br>
+            &#60;html lang="<span class="atributo">pt-br</span>"&#62;</br>
+            &nbsp;&#60;head&#62;</br>
+            &nbsp; &nbsp; &#60;title&#62;<span class="corum">Introdução ao Javascript</span>&#60;/title&#62;</br>
+            &nbsp; &nbsp; &#60;meta charset="<span class="atributo">UTF-8</span>"&#62;</br>
+            &nbsp; &nbsp; &#60;script&#62;</br>
+            &nbsp; &nbsp; &nbsp; <span class="propriedade">alert</span>("<span class="corum">Hello, World</span>");</br>
+            &nbsp; &nbsp; &#60;/script&#62;</br>
+            &nbsp; &#60;/head&#62;</br>
+            &nbsp; &#60;body&#62;</br>
+            &nbsp; &nbsp;&#60;h1&#62;<span class="corum">Introdução ao Javascript</span>&#60;/h1&#62;</br>
+            &nbsp;&#60;/body&#62;</br>
+            &#60;/html&#62;</br>
+          </div>
+        </div>
+        <p class="paragrafo">Agora vamos colocar o mesmo script na área <span class="elemento">&#60;body&#62; &#60;/body&#62;</span>.</p>
+        <div class="exemplocompleto">
+          <div>
+            <p class="ex">EXEMPLO</p>
+          </div>
+          <div class="exemplo">
+            &#60;!DOCTYPE html&#62;</br>
+            &#60;html lang="<span class="atributo">pt-br</span>"&#62;</br>
+            &nbsp;&#60;head&#62;</br>
+            &nbsp; &nbsp; &#60;title&#62;<span class="corum">Introdução ao Javascript</span>&#60;/title&#62;</br>
+            &nbsp; &nbsp; &#60;meta charset="<span class="atributo">UTF-8</span>"&#62;</br>
+            &nbsp; &#60;/head&#62;</br>
+            &nbsp; &#60;body&#62;</br>
+            &nbsp; &nbsp;&#60;h1&#62;<span class="corum">Introdução ao Javascript</span>&#60;/h1&#62;</br>
+            &nbsp; &nbsp;&#60;script&#62;</br>
+            &nbsp; &nbsp; &nbsp; <span class="propriedade">alert</span>("<span class="corum">Hello, World</span>");</br>
+            &nbsp; &nbsp; &#60;/script&#62;</br>
+            &nbsp; &#60;/body&#62;</br>
+            &#60;/html&#62;</br>
+        </div>
+        </div>
+        <p class="paragrafo">Há principal diferença em colocar o código javascript na área <span class="elemento">&#60;head&#62;</span> ou na <span class="elemento">&#60;body&#62;</span> e o fato de que os scripts na parte inferior da área <span class="elemento">&#60;body&#62;</span> melhora a velocidade de carregamento da página web.</p>
+        <p class="paragrafo">O código javascript também pode ser colocado em arquivos externos.</p>
+        <p class="paragrafo">Para usar o código javascript em um arquivo externo, deve-se criar um arquivo com a extensão ".js", como por exemplo "script.js", é logo após adicionar a localização do arquivo javascript (script.js) na área <span class="elemento">&#60;head&#62;</span> ou na <span class="elemento">&#60;body&#62;</span>, usando a tag <span class="elemento">&#60;script&#62; &#60;/script&#62;</span> em conjunto com o atributo "<span class="atributo">src</span>".</p>
+        <div class="exemplocompleto">
+          <div>
+            <p class="ex">EXEMPLO</p>
+          </div>
+          <div class="exemplo">
+            &#60;!DOCTYPE html&#62;</br>
+            &#60;html lang="<span class="atributo">pt-br</span>"&#62;</br>
+            &nbsp; &#60;head&#62;</br>
+            &nbsp; &nbsp; &#60;title&#62;<span class="corum">Introdução ao Javascript</span>&#60;/title&#62;</br>
+            &nbsp; &nbsp; &#60;meta charset="<span class="atributo">UTF-8</span>"&#62;</br>
+            &nbsp; &#60;/head&#62;</br>
+            &nbsp; &#60;body&#62;</br>
+            &nbsp; &nbsp;&#60;h1&#62;<span class="corum">Introdução ao Javascript</span>&#60;/h1&#62;</br>
+            &nbsp; &nbsp; &#60;script <span class="atributo">src</span>="<span class="corum">script.js</span>"&#62;&#60;/script&#62;</br>
+            &nbsp; &#60;/body&#62;</br>
+            &#60;/html&#62;</br>
+          </div>
+        </div>
+        <div class="exemplocompleto">
+          <div>
+            <p class="ex">Javascript</p>
+          </div>
+          <div class="exemplo">
+            <span class="propriedade">alert</span>("<span class="corum">Hello, World</span>");
+          </div>
+        </div>
+        <div class="recado">
+          <p class="paragrafo">Siga o nosso tutorial na ordem para que você compreenda melhor o conteúdo:)</p>
+        </div>
+        <div class="contbotao">
+          <a href="home/index.html" class="botao"><span class="fas fa-angle-double-left"></span>Home</a>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="centro">
+          <div class="contfooter">
+          <a href="https://instagram.com/academia_web.github?igshid=9ke1h6y11nf5" target="_blank" class="rede"><span class="fab fa-instagram"></span></a>
+          </div>
+          <div class="contfooter">
+          <a href="https://github.com/AcademiaWeb" target="_blank" class="rede"><span class="fab fa-github"></span></a>
+          </div>
+        </div>
+        <p class="mensagem"><span class="fa fa-copyright"></span>Alguns direitos reservados</p>
+      </footer>
+    </div>
+  </body>
+</html>
