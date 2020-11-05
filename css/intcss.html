@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Introdução ao CSS</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="css, o que e css, estilo inline, estilo interno, estilo externo,">
+    <meta name="description" content="introducao ao HTML">
+    <meta name="robots" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" type="text/css" href="intcss.css">
+  </head>
+  <body>
+    <div class="conteiner">
+      <header class="header">
+        <h1 class="titulo">Academia Web</h1>
+        <nav class="menu">
+          <ul>
+            <li class="lista"><a href="/index.html" target="_blank" class="link">Home</a></li>
+            <li class="lista"><a href="/html/inth.html" target="_blank" class="link">HTML</a></li>
+            <li class="lista"><a href="index.html" class="link">CSS</a></li>
+            <li class="lista"><a href="/javascript/intjs.html" target="_blank" class="link">JavaScript</a></li>
+            <li class="lista"><a href="/sobre/sobre.html" target="_blank" class="link">Sobre</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <h1 class="subtitulo">Introdução ao CSS</h1>
+        <p class="paragrafo">O CSS (Cascading Style Sheets) em português Folha de Estilo em Cascatas, é usada para estilizar elementos escritos em uma linguagem de marcação como o HTML.</p>
+        <p class="paragrafo">O CSS separa o conteúdo da representação visual do site. Utilizando o CSS é possível alterar a cor do texto, cor de fundo, fonte e espaçamento entre parágrafo, criar tabelas, usar variações de layouts, ajustar imagens para suas respectivas telas e assim por diante. O CSS foi desenvolvido pelo W3C (World Wide Web Consortium) em 1996.</p><br>
+        <p class="paragrafo">Existem três tipos de estilos no CSS, sendo:</p>
+        <ul class="contlista">
+          <li>Inline</li>
+          <li>Interno (incorporado)</li>
+          <li>Externo</li>
+        </ul>
+        <h3 class="subtitulo">Estilo Inline</h3>
+        <p class="paragrafo">No estilo inline os comandos em CSS ficam dentro das tags do html, através do atributo <span class="elemento">style</span>. No exemplo a seguir será atribuído a cor blue (azul) ao elemento <span class="elemento">&#60;h1&#62;</span> através do atributo <span class="elemento">style</span>.</p>
+        <div class="contexemplo">
+          <div class="ex">
+            <p><span class="fab fa-html5"></span> HTML</p>
+          </div>
+          <div class="exemplo">
+            &#60;body&#62;<br>
+            &nbsp; &#60;h1 style = "<span class="atributo">color</span> : <span class="valor">blue</span>"&#62;<span class="corum">Conteúdo</span>&#60;/h1&#62;<br>
+            &#60;/body&#62;
+          </div>
+       </div>
+       <h3 class="subtitulo">Estilo Interno</h3>
+       <p class="paragrafo">O estilo interno fica na área <span class="elemento">&#60;head&#62;</span>, onde e aberto às tags <span class="elemento">&#60;style&#62;</span> <span class="elemento">&#60;/style&#62;</span>, para serem efetuados os comandos.</p>
+       <div class="contexemplo">
+         <div class="ex">
+           <p><span class="fab fa-html5"></span> HTML</p>
+         </div>
+         <div class="exemplo">
+           &#60;head&#62;<br>
+           &nbsp; &#60;title&#62;<span class="corum">Introdução ao CSS</span>&#60;/title&#62;<br>
+           &nbsp; &#60;style&#62;<br>
+           &nbsp; &nbsp; h1{<br>
+           &nbsp; &nbsp; &nbsp; <span class="atributo">color</span> : <span class="valor">blue</span><br>
+           &nbsp; &nbsp; }<br>
+           &nbsp; &#60;/style&#62;<br>
+           &#60;/head&#62;
+         </div>
+       </div>
+       <h3 class="subtitulo">Estilo Externo</h3>
+       <p class="paragrafo">No estilo externo e criada uma pasta terminada em <span class="elemento">.css</span> para ser escritos os comandos.</p>
+       <p class="paragrafo">Para importar o <span class="elemento">arquivo.css</span> é necessário adicionar na área <span class="elemento">&#60;head&#62;</span> a tag <span class="elemento">&#60;link&#62;</span> em conjunto com o atributo <span class="atributo">href</span>, sendo que o valor do mesmo é a localização do arquivo externo, é definir a relação do arquivo que se pretende importar com o arquivo atual, é a sua função, através do atributo <span class="atributo">rel</span> e o valo <span class="atributo">stylesheet</span> (folha de estilo), é necessário ainda definir o tipo do conteúdo usando o atributo <span class="atributo">type</span> com o valor <span class="atributo">text/css</span>.</p>
+       <div class="contexemplo">
+         <div class="ex">
+           <p><span class="fab fa-html5"></span> HTML</p>
+         </div>
+         <div class="exemplo">
+           &#60;head&#62;<br>
+           &nbsp; &#60;link rel="<span class="atributo">stylesheet</span>" type = "<span class="atributo">text/css</span>" href = "<span class="atributo">arquivo.css</span>"/&#62;<br>
+           &#60;/head&#62;
+         </div>
+       </div>
+       <p class="paragrafo">Esse estilo é mais recomendado, por quê  separar o código HTML do código CSS.</p>
+       <h3 class="subtitulo">Exemplo completo:</h3>
+       <div class="contexemplo">
+         <div class="ex">
+           <p><span class="fab fa-html5"></span> HTML</p>
+         </div>
+         <div class="exemplo">
+           &#60;!DOCTYPE html&#62;<br>
+           &#60;html lang="<span class="atributo">pt-br</span>"&#62;<br>
+           &nbsp; &#60;head&#62;<br>
+           &nbsp; &nbsp; &#60;title&#62;<span class="corum">Introdução ao CSS</span>&#60;/title&#62;<br>
+           &nbsp; &nbsp; &#60;meta charset="<span class="atributo">UTF-8</span>"&#62;<br>
+           &nbsp; &nbsp; &#60;link rel="<span class="atributo">stylesheet</span>" type="<span>text/css</span>" href="<span class="atributo">style.css</span>"&#62;<br>
+           &nbsp; &#60;/head&#62;<br>
+           &nbsp; &#60;body&#62;<br>
+           &nbsp; &nbsp; &nbsp; &#60;h1&#62;<span class="corum">Introdução ao CSS</span>&#60;/h1&#62;<br>
+           &nbsp; &#60;/body&#62;<br>
+           &#60;/html&#62;
+         </div>
+       </div>
+       <div class="contexemplo">
+         <div class="ex">
+           <p><span class="fab fa-css3"></span> CSS</p>
+         </div>
+         <div class="exemplo">
+           h1{<br>
+           &nbsp; <span class="atributo">color</span> : <span class="valor">green</span>;<br>
+           }
+         </div>
+       </div>
+       <h3 class="subtitulo">Resultado:</h3>
+       <p class="recado">Siga o nosso tutorial na ordem para que você compreenda melhor o conteúdo:)</p>
+         <div class="contbotao">
+           <a href="home/index.html" class="botao"><span class="fas fa-angle-double-left"></span>Home</a>
+       </div>
+      </main>
+      <footer class="footer">
+        <div class="centro">
+          <div class="contfooter">
+          <a href="https://instagram.com/academia_web.github?igshid=9ke1h6y11nf5" target="_blank" class="rede"><span class="fab fa-instagram"></span></a>
+          </div>
+          <div class="contfooter">
+            <a href="https://github.com/AcademiaWeb" target="_blank" class="rede"><span class="fab fa-github"></span></a>
+          </div>
+        </div>
+        <p class="mensagem"><span class="fa fa-copyright"></span>Alguns direitos reservados</p>
+      </footer>
+    </div>
+  </body>
+</html>
